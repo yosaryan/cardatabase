@@ -40,5 +40,5 @@ public class CardatabaseApplication {
 		repository.save (new Car("Toyota", "Prius", "Silver", "KKO-0212", 2018, 39000, owner2));
 		};
 	}
-
+//to test the first commit
 }
