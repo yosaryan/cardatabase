@@ -24,9 +24,9 @@ public class Owner {
     @JsonIgnore
     private List <Car> cars;
 
-    public Owner () {}
+    public Owner() {}
 
-    public Owner (String firstname, String lastname) {
+    public Owner(String firstname, String lastname) {
         super();
         this.firstname = firstname;
         this.lastname = lastname;
@@ -40,13 +40,13 @@ public class Owner {
         this.cars = cars;
     }
 
-    public long getOwnerid() {return ownerid;}
-    public void setOwnerid(long ownerid) {this.ownerid = ownerid;}
+    public long getOwnerid() { return ownerid; }
+    public void setOwnerid(long ownerid) { this.ownerid = ownerid; }
 
-    public String getFirstname() {return firstname;}
-    public void setFirstname(String firstname) {this.firstname = firstname;}
+    public String getFirstname() { return firstname; }
+    public void setFirstname(String firstname) { this.firstname = firstname; }
 
-    public String getLastname() {return lastname;}
-    public void setLastname(String lastname) {this.lastname = lastname;}
+    public String getLastname() { return lastname; }
+    public void setLastname(String lastname) { this.lastname = lastname; }
 
 }
