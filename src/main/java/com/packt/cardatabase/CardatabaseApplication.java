@@ -40,6 +40,5 @@ public class CardatabaseApplication {
 		repository.save (new Car("Toyota", "Prius", "Silver", "KKO-0212", 2018, 39000, owner2));
 		};
 	}
-// test 3 to commit
 
 }
