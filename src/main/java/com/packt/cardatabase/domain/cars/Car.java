@@ -1,12 +1,8 @@
-package com.packt.cardatabase.domain;
+package com.packt.cardatabase.domain.cars;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.FetchType;
+import com.packt.cardatabase.domain.users.Owner;
+
+import javax.persistence.*;
 
 @Entity
 public class Car {
@@ -35,12 +31,12 @@ public class Car {
         this.owner = owner;
     }
 
-    public Owner getOwner() {
-        return owner;
+    public long getId() {
+        return id;
     }
 
-    public void setOwner(Owner owner) {
-        this.owner = owner;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getBrand() {
@@ -91,7 +87,13 @@ public class Car {
         this.price = price;
     }
 
+    public Owner getOwner() {
+        return owner;
+    }
 
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
 }
 
 
