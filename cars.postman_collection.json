@@ -51,14 +51,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/cars",
+					"raw": "http://localhost:8080/cars",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"api",
 						"cars"
 					]
 				}
@@ -81,6 +80,36 @@
 						"cars",
 						"brand",
 						"Ford"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"brand\": \"Ford\",\r\n        \"model\": \"Fiesta\",\r\n        \"color\": \"Blue\",\r\n        \"registerNumber\": \"ADF-sssss\",\r\n        \"year\": 1999,\r\n        \"price\": 66000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars/owner/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"owner",
+						"7"
 					]
 				}
 			},
