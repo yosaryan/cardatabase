@@ -13,7 +13,8 @@ import java.util.List;
 public class Owner {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long ownerid;
+    private Long ownerid;
+
     private String firstname, lastname;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
